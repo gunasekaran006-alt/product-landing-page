@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: #111;
+  color: #fff;
+}
+
+header nav a {
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: orange;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+  background: #fff;
+}
+
+.hero-text h2 {
+  font-size: 40px;
+}
+
+.hero-text p {
+  margin: 15px 0;
+  color: #555;
+}
+
+.hero-text button {
+  padding: 12px 25px;
+  background: orange;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background: darkorange;
+}
+
+.hero-img img {
+  width: 750px;
+}
+
+/* Features */
+.features {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.features h2 {
+  margin-bottom: 30px;
+}
+
+.feature-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Pricing */
+.pricing {
+  padding: 60px 10%;
+  text-align: center;
+  background: #fff;
+}
+
+.price-card {
+  display: inline-block;
+  background: orange;
+  padding: 30px 50px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.price-card button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+}
