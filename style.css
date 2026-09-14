@@ -36,6 +36,12 @@ header nav a:hover {
   align-items: center;
   padding: 60px 10%;
   background: #fff;
+  
+@media (max-width: 768px) { 
+  /*This helps images and text appear beautifully one after another (vertically) on mobile devices.*/
+  .hero { flex-direction: column; text-align: center; } 
+}
+
 }
 
 .hero-text h2 {
@@ -61,7 +67,10 @@ header nav a:hover {
 }
 
 .hero-img img {
-  width: 750px;
+  /* width: 750px; */
+  /*If you set a fixed width of 750px, the image will overflow on mobile devices. Using `max-width` allows the image to shrink to fit the screen.*/
+  max-width: 100%;
+  height: auto;
 }
 
 /* Features */
